@@ -78,7 +78,7 @@ server:
   port: 8080
   servlet:
     #指定localhost:8080后面的路径,默认为"/"
-    path: /
+    path: /multistage-distribution-system
 
 #易源数据    
 #net: 

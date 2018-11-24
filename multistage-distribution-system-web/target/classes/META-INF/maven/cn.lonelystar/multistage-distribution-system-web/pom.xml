@@ -7,7 +7,7 @@
 		<artifactId>multistage-distribution-system</artifactId>
 		<version>${project.version}</version>
 	</parent>
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>cn.lonelystar</groupId>
@@ -15,6 +15,50 @@
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
-	
+
+	<!-- Package as a executable jar -->
+	<build>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**.*</include>
+					<include>**/*.*</include><!-- i18n能读取到 -->
+					<include>**/*/*.*</include>
+				</includes>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+
+				<configuration>
+					<fork>true</fork><!-- 如果没有该配置,devtools不会生效 -->
+					<!-- 指定该Main Class为全局的唯一入口 -->
+					<mainClass>cn.lonelystar.Application</mainClass>
+					<layout>ZIP</layout>
+				</configuration>
+				
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal><!-- 可以把依赖的包都打包到生成的jar包中 -->
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<!-- 指定项目导出的jar包名字 -->
+		<finalName>multistage-distribution-system</finalName>
+	</build>
+
 	<artifactId>multistage-distribution-system-web</artifactId>
 </project>
