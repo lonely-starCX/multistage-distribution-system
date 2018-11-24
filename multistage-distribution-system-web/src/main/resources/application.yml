@@ -27,16 +27,16 @@ spring:
 #      content-type: text/html; charset=utf-8
 #    cache: false
 
-#  redis:
-#    host: 47.107.90.255
-#    database: 0
-#    port: 6379
-#    password: ZAQcX991231
-#    pool:
-#      max-idle: 10
-#      max-wait: -1
-#      min-idle: 2
-#    timeout: 10000
+  redis:
+    host: 47.107.90.255
+    database: 0
+    port: 6379
+    password: ZAQcX991231
+    pool:
+      max-idle: 10
+      max-wait: -1
+      min-idle: 2
+    timeout: 10000
   
 #数据库驱动
 #jdbc.driver=com.mysql.jdbc.Driver
@@ -44,41 +44,41 @@ spring:
 #jdbc.username=root
 #jdbc.password=991231
 
-#  datasource: 
-#    url: jdbc:mysql://47.107.90.255:3306/multistage_distribution_system?useUnicode=true&characterEncoding=utf-8
-#    username: root
-#    password: dhvewWSznIpWs63j
-#    driver-class-name: com.mysql.jdbc.Driver
-#    druid:
-#      initial-size: 1
-#      min-idle: 1
-#      max-active: 20
-#      test-on-borrow: true
-#      stat-view-servlet:
-#        allow: true
+  datasource: 
+    url: jdbc:mysql://47.107.90.255:3306/multistage_distribution_system?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: dhvewWSznIpWs63j
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      stat-view-servlet:
+        allow: true
 
-#mybatis:
-#  type-aliases-package: cn.lonelystar.pojo
-#  mapper-locations:
-#  - classpath:mapper/*.xml
-#mapper:
-#  mappers:
-#  - tk.mybatis.mapper.common.Mapper
-#  not-empty: false
-#  identity: MYSQL
-#
-#pagehelper:
-#  helper-dialect: mysql
-#  reasonable: true
-#  support-methods-arguments: true
-#  params: count=countsql
-#  
-#server:
-#  #指定端口号,默认8080
-#  port: 8080
-#  servlet:
-#    #指定localhost:8080后面的路径,默认为"/"
-#    path: /
+mybatis:
+  type-aliases-package: cn.lonelystar.pojo
+  mapper-locations:
+  - classpath:mapper/*.xml
+mapper:
+  mappers:
+  - tk.mybatis.mapper.common.Mapper
+  not-empty: false
+  identity: MYSQL
+
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countsql
+  
+server:
+  #指定端口号,默认8080
+  port: 8080
+  servlet:
+    #指定localhost:8080后面的路径,默认为"/"
+    path: /
 
 #易源数据    
 #net: 
