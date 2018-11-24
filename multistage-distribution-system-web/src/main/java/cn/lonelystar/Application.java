@@ -18,6 +18,11 @@ import tk.mybatis.spring.annotation.MapperScan;
 @ComponentScan(basePackages = { "cn.lonelystar" })
 public class Application {
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		try {
+			SpringApplication.run(Application.class, args);
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
 	}
 }

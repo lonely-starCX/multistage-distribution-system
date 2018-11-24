@@ -25,36 +25,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/resources/static/README.md</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/HBuilder.9.0.2.windows/HBuilder%20Workspace/Multistage%20Distribution%20System2/README.md</locationURI>
-		</link>
-		<link>
-			<name>src/main/resources/static/favicon.ico</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/HBuilder.9.0.2.windows/HBuilder%20Workspace/Multistage%20Distribution%20System2/favicon.ico</locationURI>
-		</link>
-		<link>
-			<name>src/main/resources/static/index.html</name>
-			<type>1</type>
-			<locationURI>PARENT-4-PROJECT_LOC/HBuilder.9.0.2.windows/HBuilder%20Workspace/Multistage%20Distribution%20System2/index.html</locationURI>
-		</link>
-		<link>
-			<name>src/main/resources/static/json</name>
-			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/HBuilder.9.0.2.windows/HBuilder%20Workspace/Multistage%20Distribution%20System2/json</locationURI>
-		</link>
-		<link>
-			<name>src/main/resources/static/layui</name>
-			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/HBuilder.9.0.2.windows/HBuilder%20Workspace/Multistage%20Distribution%20System2/layui</locationURI>
-		</link>
-		<link>
-			<name>src/main/resources/static/nepadmin</name>
-			<type>2</type>
-			<locationURI>PARENT-4-PROJECT_LOC/HBuilder.9.0.2.windows/HBuilder%20Workspace/Multistage%20Distribution%20System2/nepadmin</locationURI>
-		</link>
-	</linkedResources>
 </projectDescription>
